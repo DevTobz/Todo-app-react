@@ -45,6 +45,10 @@
     height: 50px;
     
 }
+.btn1:hover{
+    border-color: transparent;
+
+}
 
 .inner-overlay{
     height: 650px;
@@ -103,7 +107,7 @@
     color: rgb(77, 71, 71) ;
 }
 .btn2:hover{
-    border: 0;
+    border-color: transparent;
     transition: none;   
 }
 .task-div{

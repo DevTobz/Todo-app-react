@@ -4,7 +4,7 @@ import cross from './assets/icon-cross.svg'
 import check from './assets/icon-check.svg'
 import { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCircleDown } from "@fortawesome/free-regular-svg-icons";
+import { faCircleDown,faCircleCheck } from "@fortawesome/free-regular-svg-icons";
 
 const Home = () => {
 const [tasks, setTasks] = useState([]);
@@ -56,7 +56,7 @@ const handleCompleted =()=>{
 
  const textStyle = {
     textDecoration: 'line-through',
-    
+    color:'grey'
   };
 
 const checkBoxStyles = {
@@ -66,11 +66,11 @@ const checkBoxStyles = {
   height: '20px',
   marginLeft: '30px',
   borderRadius: '50%',
-  backgroundImage: `url(${check})`,
-  backgroundSize: 'cover',
-  backgroundRepeat: 'no-repeat',
   border: '2px solid gray',
   cursor: 'pointer',
+  backgroundColor:'gray'
+  
+
 };
 
 
@@ -95,7 +95,7 @@ const checkBoxStyles = {
                     </div>
                     <div className="formDiv">
                         <form onSubmit={(e)=>handleSubmit(e)}>
-                            <input type="text" placeholder="Create a new Todo" className="inputTodo" onChange={e=>setTaskValue(e.target.value)}></input> 
+                            <input type="text" placeholder="Create a new Todo" className="inputTodo" onChange={e=>setTaskValue(e.target.value)} value={taskValue}></input> 
                             <button type="submit" className="btn2"><FontAwesomeIcon icon={faCircleDown} size="lg"/></button>
                         </form> 
                     </div>
