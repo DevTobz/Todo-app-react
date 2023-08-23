@@ -1,0 +1,345 @@
+*{
+    font-family: 'poppins';
+}
+
+.header {
+    background-image: url('./assets/bg-desktop-light.jpg');
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    height: 50%;  
+   
+ 
+}
+
+
+.main {
+    height: 100vh;
+    flex: 1;
+    overflow-x: clip;
+    width: 100vw;
+
+    
+}
+
+.overlay {
+    position: absolute;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    top: 40px;
+    left: 300px;
+    right: 300px;
+    z-index: 1;
+    width: auto;
+    height: auto;
+    
+
+}
+
+.btn1{
+    
+    background-color: transparent;
+    background-repeat: no-repeat;
+    width: 70px;
+    height: 50px;
+    
+}
+
+.inner-overlay{
+    height: 650px;
+    width: 550px;
+   
+    
+}
+.div-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+
+}
+.div-1 p{
+    color: white;
+    font-size: 40px;
+    font-weight: 900;
+    letter-spacing: 20px;
+    font-family: 'poppins-bold';
+   
+}
+.formDiv{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: auto;
+    width: 550px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+
+.inputTodo{
+    height: 50px;
+    width: 400px;
+    background-color: white;
+    border: none;
+    color: rgb(77, 71, 71);
+    font-size: 1rem;
+    font-weight: 900;
+    
+}
+.inputTodo:focus{
+    outline: none;
+}
+.inputTodo::placeholder{
+    color: rgb(77, 71, 71);
+}
+.btn2{
+    right:0px;
+    height: 20px;
+    width: 15px;
+    border-radius: 50px;
+    background-color: transparent;
+    color: rgb(77, 71, 71) ;
+}
+.btn2:hover{
+    border: 0;
+    transition: none;   
+}
+.task-div{
+    background-color: white;
+    height: 60px;
+    width: auto;
+    border-radius: 5px;
+    display: flex;
+    color: rgb(77, 71, 71);
+   align-items: center;
+   flex-direction: row;
+   margin-bottom:2px ;
+   justify-content: space-between;
+   border-bottom: 0.1px solid grey;
+   
+   
+}
+.wrapper-div{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 5px;
+        height: 70%;
+     
+      
+}
+.deleteBtn{
+       background-color: white;
+        border: none;
+        
+        margin-right: 15px;
+}
+
+.checkbox{
+    flex-shrink: 0;
+    margin-right: 30px;
+    width: 20px;
+    height: 20px;
+    margin-left: 30px;
+    border-radius: 50%;
+    background-color: white;
+   
+    border: 1px solid rgb(77, 71, 71);
+    cursor: pointer;
+}
+.status-div{
+        background-color: white;
+        height: 50px;
+        width: 550px;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-around;
+        border-bottom: 0.5px solid grey;
+        box-shadow: 0 0 10px #ccc;
+        
+      
+}
+.lower-btn-div{
+    display: flex;
+    flex-direction: row;
+    height:25px;
+    width: 200px;
+    background-color: white;
+ 
+}
+.left-state-div{
+    height: 35px;
+    width: 100px;
+    background-color: white;
+    text-align: center;
+    color: rgb(77, 71, 71);
+    font-size: 13px;
+    font-weight: bolder;
+}
+
+.lower-btn-div button{
+    font-size: 13px;
+    text-align: center;
+    background-color: white;
+    color: rgb(77, 71, 71);
+    height: 25px;
+    border: none;
+    transition: 0.5s;
+    font-weight: 900;
+}
+
+.lower-btn-div button:hover{
+    font-size: 14px;
+    border: none;
+    font-weight:900 ;
+    color: black;
+    
+}
+ 
+.clear-completed-btn{
+        font-size: 13px;
+        text-align: center;
+        background-color: white;
+        color: rgb(77, 71, 71);
+        font-weight: bolder;
+        height: 25px;
+        transition: 0.5s;
+        border: none;
+     
+}
+.clear-completed-btn:hover{
+        font-size: 14px;
+        border: none;
+        font-weight: 900;
+        color: black;
+}
+@media (max-width: 768px){
+
+    .main {
+        width: 100vw;
+        overflow-x: clip;
+        height: 100vh;
+        
+    }
+    .header {
+            background-image: url('./assets/bg-mobile-light.jpg');
+            width: 100%;
+            background-size: cover;
+            background-position: center;
+            height: 30%;
+            
+    
+    }
+    .overlay{
+        width: 100%;
+        height: auto;
+        position: fixed;
+        left: 0;
+        top: 0;
+    }
+    .inner-overlay{
+        height: auto;
+        width: 100%;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    .div-1{
+        height: auto;
+        width: auto;
+    }
+     .formDiv {
+            height: auto;
+            width: auto;
+       
+
+    }
+    .inputTodo{
+        height: 2.5rem;
+        width: 80%;
+    }
+    form{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .status-div{
+        height: auto;
+        width: auto;
+    }
+    .body-contain{
+        height: auto;
+        width: auto;
+        box-shadow: 0 0 50px #ccc;
+    }
+    .lower-btn-div{
+        height: 3rem;
+        width: 100%;
+        position: relative;
+        top: 80px;
+        justify-content: space-between;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-left: 2rem;
+        border-radius: 10px;
+        box-shadow: 0 0 50px #ccc;
+    }
+    .lower-btn-div button{
+        height: auto;
+        width: auto;
+        padding: 0;
+        font-size: 0.8rem;
+        padding: 2px;
+       
+    }
+    .clear-completed-btn{
+        height: auto;
+        width: auto;
+        font-size: 0.8rem;
+        padding: 0;
+        white-space: nowrap;
+    }
+    .left-state-div {
+        height: auto;
+        width: auto;
+        font-size: 0.8rem;
+        white-space: nowrap;
+
+    }
+   
+    .task-div{
+        height: auto;
+        width: auto;
+    }
+    .wrapper-div{
+        height: auto;
+        width: auto;
+    }
+    .wrapper-div p{
+        height: auto;
+        width: auto;
+        font-size: 0.8rem;
+        color: rgb(77, 71, 71);
+    }
+    .status-div{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+  
+}
+@font-face {
+    font-family: 'poppins';
+    src: url('./font/Poppins-Regular.ttf') format('truetype'),
+
+}
+@font-face {
+    font-family: 'poppins-bold';
+    src: url('./font/Poppins-Bold.ttf') format('truetype'),
+
+}
